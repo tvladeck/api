@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'haml'
 gem 'simple_form'
 
+
 gem 'zurb-foundation', '~> 4.0.0'
 
 

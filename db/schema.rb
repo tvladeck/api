@@ -11,11 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131006205920) do
+ActiveRecord::Schema.define(version: 20131006210042) do
 
   create_table "dashboards", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "tweets"
+    t.boolean  "meditated"
+    t.boolean  "stretched"
+    t.boolean  "climbed"
   end
 
 end
