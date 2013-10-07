@@ -10,7 +10,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'haml'
 gem 'simple_form'
+
 gem "twitter", "~> 4.8.1"
+gem 'foursquare2'
 
 gem 'zurb-foundation', '~> 4.0.0'
 

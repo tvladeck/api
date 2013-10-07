@@ -14,6 +14,10 @@ class Dashboard < ActiveRecord::Base
       # todo
     end
     
+    def today
+      # todo
+    end
+    
     # method to pull the correct dashboard entry to send to the form
     def pull_dashboard_entry_for_form
       # todo. mock for now
