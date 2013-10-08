@@ -121,7 +121,7 @@ GOOGLE_ACCOUNTS_BASE_URL = 'https://accounts.google.com'
 
 
 # Hardcoded dummy redirect URI for non-web apps.
-REDIRECT_URI = 'urn:ietf:wg:oauth:2.0:oob'
+REDIRECT_URI = 'http://www.tomvladeck.com'
 
 
 def AccountsUrl(command):
@@ -312,9 +312,10 @@ def main(argv):
     authorization_code = raw_input('Enter verification code: ')
     response = AuthorizeTokens(options.client_id, options.client_secret,
                                 authorization_code)
-    print 'Refresh Token: %s' % response['refresh_token']
-    print 'Access Token: %s' % response['access_token']
-    print 'Access Token Expiration Seconds: %s' % response['expires_in']
+    print response
+    #print 'Refresh Token: %s' % response['refresh_token']
+    #print 'Access Token: %s' % response['access_token']
+    #print 'Access Token Expiration Seconds: %s' % response['expires_in']
   elif options.test_imap_authentication:
     RequireOptions(options, 'user', 'access_token')
     TestImapAuthentication(options.user,
